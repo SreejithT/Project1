@@ -1,13 +1,11 @@
-.link{
-    background-color: aqua;
+
+th:hover{
+    background-color: gray;
 }
-.link:hover{
-    background-color: blue;
+td:hover{
+    background-color:yellow ;
 }
 
-/* a{
-
+li:hover{
+    background-color: teal;
 }
-a:hover{
-
-} */
