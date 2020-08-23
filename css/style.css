@@ -9,3 +9,19 @@ td:hover{
 li:hover{
     background-color: teal;
 }
+
+form{
+    text-align: center;
+    
+}
+
+.ftr{
+     background-color: darkslategray;
+   
+margin: 15px;
+margin-left: auto;
+margin-right: auto;
+
+    height: 200px;
+   
+}
