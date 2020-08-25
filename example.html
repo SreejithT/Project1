@@ -29,12 +29,40 @@
         // let i=new Number(123)
         // let s3=i.toString()
         // console.log(s3,typeof s3)
-        let i1=new Number(123)
-        let i2=new Number(123)
-        console.log(i1===i2)
+        // let i1=new Number(123)
+        // let i2=new Number(123)
+        // console.log(i1===i2)
+        // var names=[10,20,30,40]
+        // names[4]=70
+        // names.push(1000)
+        // names.pop() // only last element can be removed
+        // names.splice(1,1) // (index,how many elements
+        //                         //should be removed from that index element)
+        // names.shift() // removes first element
+        // names.unshift(200) // add first element
+        // console.table(names) // print as a table
+        // console.log(names.indexOf(1000)) // to find index of element
+        // console.log(names.length)
+        // console.log(names)
+        // console.log(names[2])
+        
+        // var names1=new Array()
 
-
+        function create()
+        { 
+            var date=new Date()
+            // console.log(date)
+           var Para = document.createElement("input")
+           Para.setAttribute("value",date)
+        //    Para.setAttribute("placeholder","date")
+           Para.setAttribute("id","p1")
+           Para.setAttribute("required","true")
+            document.getElementById("myparas").appendChild(Para)
+            // document.getElementById("myparas").innerHTML="<p>hello</p>"
+        }
 
     </script>
+    <button onclick="create()">click</button>
+    <div id="myparas"></div>
 </body>
 </html>

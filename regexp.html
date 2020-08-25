@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="username">
+    <button onclick="check()">Check </button>
+    <script>
+        function check(){
+            // var uname=document.getElementById("username").value
+            
+            // var regex=/\d+/g  //g-global search
+            // var d =uname.match(regex)  // match function returns array of matching values
+            // console.log(d)
+
+        //     var regex=/^[a-z]{3,}\d{2}$/  //^-should begin with $-end of expression
+        //     if(regex.test(uname)){
+        //         alert("valid username")
+        //     }
+        //     else{
+        //         alert("invalid username")
+        //     }
+        // }
+
+        //         var regex=/^(987)\d{7}$/ //()-group something
+        //         if(regex.test(uname)){
+        //         alert("valid username")
+        //     }
+        //     else{
+        //         alert("invalid username")
+        //     }
+        // }
+
+        // var regex=/^\+91\s(987)\d{7}$/ //\+-check for '+'
+        //         if(regex.test(uname)){
+        //         alert("valid username")
+        //     }
+        //     else{
+        //         alert("invalid username")
+        //     }
+        // }
+
+        // var regex=/^\+91\s(987)|(789)\d{7}$/ //|-or
+        //         if(regex.test(uname)){
+        //         alert("valid username")
+        //     }
+        //     else{
+        //         alert("invalid username")
+        //     }
+        // }
+
+        // var regex=/^\w+@(gmail.com)|(yahoo.in)$/ 
+        //         if(regex.test(uname)){
+        //         alert("valid username")
+        //     }
+        //     else{
+        //         alert("invalid username")
+        //     }
+        // }
+
+        var message="My phonenumber is 9876543210 and office number is (0484-2234567) and fax is (0484-2243567)"
+        var regex=/(\(\d+-\d+\))|\d+/g
+        var d=message.match(regex)
+        console.log(d)
+
+
+    
+        // var regex=/^\w+[@]{1}(gmail.com)|[@]{1}(yahoo.in)$/ 
+        // if(regex.test(uname)){
+        //         alert("valid username")
+        //     }
+        //     else{
+        //         alert("invalid username")
+        //     }
+        // }
+
+        // var regex1=/javascript/g
+        // var input="javascript is interpreted.javascript is object oriented"
+        // alert(input.match(regex1))
+        // alert(input.replace(regex1,"python"))
+
+        }
+    </script>
+    
+</body>
+</html>

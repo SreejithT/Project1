@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // ()=>{ //arrow function
+
+        // }
+
+        var x=[10,20,30,40,50,600]
+        x.forEach((element)=>{
+            console.log(element)     //callback function= arrow function
+        })
+
+                        //map=manupilating , filter=filtering
+       let newarray = x.map((e)=>{
+           return e**2
+        })
+        console.log(newarray)
+
+        var a=[1,2,3,4,5,6,7,8,9]
+
+        let filterarray=a.filter((i)=>{
+            if(i%2!=0)
+            return i
+        }
+        )
+        console.log(filterarray)
+
+        let result=x.reduce((i,j)=>{              // returns a single value i-current value j-next value
+            return i+j
+        })
+         
+         console.log(result)
+
+         let result1=x.reduceRight((i,j)=>{              // returns a single value i-current value j-next value
+            console.log("i : ",i)
+            console.log("j : ",j)
+            return i-j
+        })
+         
+         console.log(result1)
+
+
+
+
+    </script>
+</body>
+</html>
