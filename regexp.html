@@ -6,10 +6,10 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="text" id="username">
-    <button onclick="check()">Check </button>
+    <!-- <input type="text" id="username">
+    <button onclick="check()">Check </button> -->
     <script>
-        function check(){
+        // function check(){
             // var uname=document.getElementById("username").value
             
             // var regex=/\d+/g  //g-global search
@@ -61,10 +61,10 @@
         //     }
         // }
 
-        var message="My phonenumber is 9876543210 and office number is (0484-2234567) and fax is (0484-2243567)"
-        var regex=/(\(\d+-\d+\))|\d+/g
-        var d=message.match(regex)
-        console.log(d)
+        // var message="My phonenumber is 9876543210 and office number is (0484-2234567) and fax is (0484-2243567)"
+        // var regex=/(\(\d+-\d+\))|\d+/g
+        // var d=message.match(regex)
+        // console.log(d)
 
 
     
@@ -82,8 +82,25 @@
         // alert(input.match(regex1))
         // alert(input.replace(regex1,"python"))
 
+        function search(){
+            let content=document.getElementById("content").value
+            let word=document.getElementById("search").value
+            // let regex=/word/g
+            let regex=new RegExp(word,"g")
+            document.getElementById("Highlight").innerHTML= content.replace(regex,"<span style='background-color:yellow'>" + word + "</span>")
+
         }
+
+        // }
     </script>
+
+    <textarea name="" id="content" cols="30" rows="10">    </textarea>
+        <input type="text" id="search">
+        <button onclick="search()">Search</button>
+        <div id="Highlight">
+
+        </div>
+
     
 </body>
 </html>

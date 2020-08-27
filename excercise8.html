@@ -20,6 +20,7 @@
     
         function Add(){
             var li=document.createElement("li")
+            
             var bt1=document.createElement("button")
 
             
@@ -42,15 +43,38 @@
          
     
          var bt2=document.createElement("button")
+         var bt3=document.createElement("button")
+        //  bt3.innerText="Delete"
+        //  bt3.onclick=function Delete2(){
+        //     //  li.innerText=document.getElementById("list2").value
+        //     // var e=array.indexOf(li.innerText)
+        //     array2.splice(e,1)
+        //     document.getElementById("list2").removeChild(li)
+        //     document.getElementById("list2").removeChild(bt3)
+        //     console.log("Tomorrow",array2)
+
+        //  }
          bt2.innerText="Move"
          bt2.onclick= function Move(){
             var d=array.indexOf(li.innerText)
             array.splice(d,1)
              array2.push(li.innerText)
+             bt3.innerText="Delete"
+         bt3.onclick=function Delete2(){
+            var s=array2.indexOf(li.innerText)
+             array2.splice(s,1)
+            document.getElementById("list2").removeChild(li)
+            document.getElementById("list2").removeChild(bt3)
+            console.log("Tomorrow",array2)
+
+         }
+         
             document.getElementById("list").removeChild(li)
              document.getElementById("list").removeChild(bt1)
             document.getElementById("list").removeChild(bt2)
             document.getElementById("list2").appendChild(li)
+            document.getElementById("list2").appendChild(bt3)
+            
             console.log("To Do List",array)
             console.log("Tomorrow",array2)
           
@@ -61,15 +85,19 @@
             
             var x=document.getElementById("tdl").value
             li.innerText=x
-            
+            if (x !=""){
+        
             array.push(x)
+            document.getElementById("list").appendChild(li)
+            document.getElementById("list").appendChild(bt1)
+            document.getElementById("list").appendChild(bt2)
+            }
+            document.getElementById("tdl").value=""
 
          
             
           
-            document.getElementById("list").appendChild(li)
-            document.getElementById("list").appendChild(bt1)
-            document.getElementById("list").appendChild(bt2)
+            
             // bt1.setAttribute("value","Delete")
             // bt2.setAttribute("value","Move")
             // document.getElementsByName("bt1").innerText="Delete"
