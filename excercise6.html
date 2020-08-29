@@ -6,12 +6,30 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="images/logo3.png">
-    <img src="images/logo.png" alt="">
-    </a>
-    <a href="images/logo.png">
+    <script>
+        function change(){
+            if (document.getElementById("img1").style.display=="none"){
+                document.getElementById("img1").style.display="inline-block"
+                document.getElementById("img2").style.display="none"
+
+            }
+            else{
+          document.getElementById("img1").style.display="none"
+          document.getElementById("img2").style.display="inline-block"
+            }
+         
+        }
+    </script>
+    <div>
+    
+    <img id="img1" src="images/logo.png" alt="">
+    <img id="img2" style="display: none;" src="images/apple.png" alt="">
+    
+</div>
+<button onclick="change()">Change</button>
+    <!-- <a href="images/logo.png">
     <img src="images/logo3.png" alt="">
-    </a>
+    </a> -->
     
 </body>
 </html>

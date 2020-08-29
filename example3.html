@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <canvas id=myCanvas width="200" height="100"></canvas> -->
+    <script>
+        // (function(a){
+        //     console.log(a)
+        //     console.log("this is a self invoking function")
+        // })("hello")
+       
+
+
+
+        // var c=document.getElementById("myCanvas")
+        // var ctx=c.getContext("2d")
+        // ctx.moveTo(0,0)
+        // ctx.lineTo(100,100)
+        // ctx.stroke()
+
+        // var Greetings=function(){
+        //     console.log("function Greetings")
+        // }
+
+//         function calculate(f,a,b){
+//             var result=f(a,b)
+//             // console.log(f)
+//             console.log("Result",result)
+//         }
+
+//         function add(x,y){
+//             return x+y
+//         }
+//         function sub(x,y){
+//             return x-y
+//         }
+// calculate(add,10,20)  // add is passed by reference-address
+//                     // 10,20 is passed by values
+// calculate(sub,20,20)
+
+// function first(){
+//     console.log("first function called")
+//     return function second(){
+//         console.log("second function called")
+//         return function third(){
+//             console.log("third function called")
+//         }
+//     }
+// }
+// let f1=first()
+// let f2=f1()
+// f2()
+ var str="2012-09-02"
+ let date=new Date(str)
+//  console.log(date,typeof date)
+ console.log(date.toLocaleDateString())
+ console.log(date.toDateString())
+ console.log(date.getDate())
+ console.log(date.getMonth())
+
+
+
+
+
+
+        
+    </script>
+    
+    
+</body>
+</html>

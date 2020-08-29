@@ -1,19 +1,19 @@
-// // let student={
-// //     rollno:1,
-// //     name:"amal",
-// //     age:20,
-// //     marks:[80,90,70],
-// //     display:function(){
-// //         console.log(this.rollno)
-// //     },
-// //     average:function(){
-// //         return this.marks.reduce((x,y)=>x+y)/this.marks.length
-// //     }
+// let student={
+//     rollno:1,
+//     name:"amal",
+//     age:20,
+//     marks:[80,90,70],
+//     display:function(){
+//         console.log(this.rollno)
+//     },
+//     average:function(){
+//         return this.marks.reduce((x,y)=>x+y)/this.marks.length
+//     }
 
-// // }
+// }
 
-// // // student.average()
-// // console.log(student.average())
+// // student.average()
+// console.log(student.average())
 
 
 
@@ -93,9 +93,15 @@
 
 // console.log("\u00A9") // unicode characters
 
-var numarray=[10,19,30,40,50,60,70] //Array destruction
-var [a,b,c,d,e,f,g]=numarray
-console.log(a)
-console.log(b)
-console.log(numarray.every((x)=>x%2==0)) // all elements should satisy the condition  o/p-boolean
-console.log(numarray.some((x)=>x%2==0))     // some element should satisy the condition o/p-boolean
+// var numarray=[10,19,30,40,50,60,70] //Array destruction
+// var [a,b,c,d,e,f,g]=numarray
+// console.log(a)
+// console.log(b)
+// console.log(numarray.every((x)=>x%2==0)) // all elements should satisy the condition  o/p-boolean
+// console.log(numarray.some((x)=>x%2==0))     // some element should satisy the condition o/p-boolean
+
+// let str=JSON.stringify(p) //to convert js objects into string
+// let obj=JSON.parse(str)  //to convert js string to object
+
+
+
