@@ -10,18 +10,21 @@ let Product={
 }
 var List=new Array()
 function submit(){
-    id=document.getElementById("id").value
-    name=document.getElementById("name").value
-    price=document.getElementById("price").value
+   let id=document.getElementById("id").value
+   let name=document.getElementById("name").value
+    let price=document.getElementById("price").value
 
  let obj=Object.create(Product)
  obj.ID=id
  obj.Name=name
  obj.Price=price
+//  let str=JSON.stringify(obj) // converts objects to string format
+// let obj2=JSON.parse(str)     // converts string to object format
  List.push(obj)
+//  localStorage.setItem("k",str)
  
 obj.display()
-//  console.log(obj)
+//  console.log(typeof obj2)
  console.log(List)
 
 }
